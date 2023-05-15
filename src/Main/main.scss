@@ -85,6 +85,7 @@ h1, a, p, h2{
     justify-content: space-between;
     margin-top: 3rem;
     gap: 2rem;
+    margin-bottom: 5rem;
     &__item {
         min-width: 22%;
         background-color: $whiteColor;
@@ -116,5 +117,40 @@ h1, a, p, h2{
                 padding: 0.5rem 1rem
             }
         }
+    }
+}
+
+.mission {
+    display: flex;
+    &__text {
+        color: $greyColor;
+        background-color: white;
+        h2 {
+            color: $aquaColor;
+            padding-bottom: 2rem;
+            padding-left: 10%;
+        }
+        padding: 4rem;
+        p {
+            padding-inline: 10%;
+            color: $greyColor;
+            line-height: 1.8rem;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            background-color: $aquaColor;
+            color: $whiteColor;
+            padding: 0.7rem 3.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 2rem;   
+            margin-left: 10%;
+        }
+    }
+    &__img {
+        background-image:  url("../img/img_2.png");
+        background-size: cover;
+        min-width: 50%;
     }
 }

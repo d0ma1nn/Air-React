@@ -87,6 +87,7 @@ h1, a, p, h2 {
   justify-content: space-between;
   margin-top: 3rem;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .flexbox__item {
   min-width: 22%;
@@ -118,4 +119,39 @@ h1, a, p, h2 {
 }
 .flexbox__item td p {
   padding: 0.5rem 1rem;
+}
+
+.mission {
+  display: flex;
+}
+.mission__text {
+  color: #939394;
+  background-color: white;
+  padding: 4rem;
+}
+.mission__text h2 {
+  color: #007aff;
+  padding-bottom: 2rem;
+  padding-left: 10%;
+}
+.mission__text p {
+  padding-inline: 10%;
+  color: #939394;
+  line-height: 1.8rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.mission__text a {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 0.7rem 3.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-left: 10%;
+}
+.mission__img {
+  background-image: url("../img/img_2.png");
+  background-size: cover;
+  min-width: 50%;
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@ import "./main.scss"
 const thirdC = () => {
     return (
         <div>
-            <div className="flexbox">
+            <div className="flexbox container">
         <div className="flexbox__item">
           <h2>PPL (A)</h2>
           <p className="parGrey">Dozvola privatnog pilota aviona</p>

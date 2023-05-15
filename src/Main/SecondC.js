@@ -4,7 +4,7 @@ import "./main.scss"
 const secondC = () => {
     return (
         <div>
-            <div className="flexbox1">
+            <div className="flexbox1 container">
                 <div className="flexbox1__item">
                 <h2>Naša lokacija</h2>
                 <p>Nalazimo se nedaleko od Beograda na aerodromu Vojka. Posetite nas i
