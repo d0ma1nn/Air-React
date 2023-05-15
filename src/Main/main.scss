@@ -1,0 +1,83 @@
+@import "../Variables/Var.scss";
+
+h1, a, p, h2{
+    color: $whiteColor;
+}
+
+.blue__button {
+    background-color: $aquaColor;
+    padding: 0.7rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 2rem;   
+    position: relative;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    &__image {
+        background-image: url("../img/img_he.png");
+        background-size: cover;
+        height: 25vw;
+        width: 40%;
+        margin: 3rem 0rem;
+        padding-bottom: 2rem;
+    }
+    &__text { 
+        max-width: 35vw;
+        margin: auto 0;
+        position: relative;
+        a {
+            background-color: $whiteColor;
+            color: $aquaColor;
+            padding: 0.7rem 3.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 2rem;   
+            position: relative;
+            top: 4rem;
+            
+        };
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+.flexbox1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: center;
+    gap: 1.3rem;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 25vh;
+        flex: 2 3 0;
+        background-color: rgba(135, 198, 252, .9);
+        border: 1px solid #dddddd;
+        border-radius: 1rem;
+        padding-top: 2rem;
+        flex: 1;
+        position: relative;
+        padding-bottom: 2rem;
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            padding-block: 1rem;
+        }
+        a {
+            font-weight: 600;
+        }
+    }
+}

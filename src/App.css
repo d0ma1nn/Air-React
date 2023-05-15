@@ -1,0 +1,16 @@
+body {
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(2, 169, 255, 1) 25%,
+    rgba(6, 125, 255, 1) 100%
+  );
+  overflow-x: hidden;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
