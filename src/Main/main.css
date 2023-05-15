@@ -33,10 +33,11 @@ h1, a, p, h2 {
   position: relative;
 }
 .heading__text a {
-  background-color: #007aff;
+  background-color: #ffffff;
+  color: #007aff;
   padding: 0.7rem 3.5rem;
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 600;
   border-radius: 2rem;
   position: relative;
   top: 4rem;
@@ -52,9 +53,8 @@ h1, a, p, h2 {
 .flexbox1 {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 5rem;
   text-align: center;
-  gap: 1.3rem;
 }
 .flexbox1__item {
   display: flex;
@@ -66,10 +66,10 @@ h1, a, p, h2 {
   background-color: rgba(135, 198, 252, 0.9);
   border: 1px solid #dddddd;
   border-radius: 1rem;
-  padding-top: 2rem;
   flex: 1;
   position: relative;
-  padding-bottom: 2rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
 }
 .flexbox1__item h2 {
   font-size: 2.5rem;
@@ -77,4 +77,45 @@ h1, a, p, h2 {
 .flexbox1__item p {
   font-size: 1.2rem;
   padding-block: 1rem;
+}
+.flexbox1__item a {
+  font-weight: 600;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.flexbox__item {
+  min-width: 22%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+.flexbox__item h2, .flexbox__item p {
+  color: #939394;
+}
+.flexbox__item h2 {
+  padding-bottom: 1rem;
+}
+.flexbox__item h3 {
+  color: #007aff;
+  padding-block: 1rem;
+  font-size: 2rem;
+}
+.flexbox__item table {
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+}
+.flexbox__item td {
+  border: solid #007aff 1px;
+  max-width: 70%;
+}
+.flexbox__item td p {
+  padding: 0.5rem 1rem;
 }/*# sourceMappingURL=main.css.map */

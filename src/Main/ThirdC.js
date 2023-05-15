@@ -5,7 +5,7 @@ const thirdC = () => {
     return (
         <div>
             <div className="flexbox">
-        <div className="flexbox__item1">
+        <div className="flexbox__item">
           <h2>PPL (A)</h2>
           <p className="parGrey">Dozvola privatnog pilota aviona</p>
           <h3>8,000.00 eur</h3>
@@ -26,10 +26,11 @@ const thirdC = () => {
                   <td><p>7200 eur</p></td>
               </tr>
             </table>
-          </div></div>
+          </div>
+          </div>
           <a className="blue__button" href="/school.html#tabes">Saznaj više</a>
         </div>
-          <div className="flexbox__item1">
+          <div className="flexbox__item">
             <h2>LAPL (A)</h2>
             <p className="parGrey">Dozvola pilota lakog aviona</p>
             <h3>5,600.00 eur</h3>
@@ -54,7 +55,7 @@ const thirdC = () => {
             </div>
             <a className="blue__button" href="/school.html#tabes">Saznaj više</a>
           </div>
-            <div className="flexbox__item1">
+            <div className="flexbox__item">
               <h2>Timebuilding</h2>
               <p className="parGrey">Dozvola za pilota lakog aviona</p>
               <h3>160.00 eur</h3>

@@ -52,9 +52,8 @@ h1, a, p, h2{
 .flexbox1 {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
     text-align: center;
-    gap: 1.3rem;
     &__item {
         display: flex;
         flex-direction: column;
@@ -65,10 +64,10 @@ h1, a, p, h2{
         background-color: rgba(135, 198, 252, .9);
         border: 1px solid #dddddd;
         border-radius: 1rem;
-        padding-top: 2rem;
         flex: 1;
         position: relative;
-        padding-bottom: 2rem;
+        padding-block: 2rem;
+        padding-inline: 2rem;
         h2 {
             font-size: 2.5rem;
         }
@@ -78,6 +77,44 @@ h1, a, p, h2{
         }
         a {
             font-weight: 600;
+        }
+    }
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
+    &__item {
+        min-width: 22%;
+        background-color: $whiteColor;
+        text-align: center;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        h2, p  {
+            color: $greyColor;
+            
+        }
+        h2 {
+            padding-bottom: 1rem;
+        }
+        h3 {
+            color: $aquaColor;
+            padding-block: 1rem;
+            font-size: 2rem;
+        }
+        table {
+            align-self: center;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            border-collapse: collapse;
+        }
+        td {
+            border: solid $aquaColor 1px;
+            max-width: 70%;
+            p {
+                padding: 0.5rem 1rem
+            }
         }
     }
 }
