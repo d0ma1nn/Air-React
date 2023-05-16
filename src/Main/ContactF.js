@@ -3,8 +3,9 @@ import './main.scss'
 
 const contact = () => {
     return (
-        <div class="contact" id="contact">
-        <div class="contact__email container">
+      <div className="contact__fix">
+        <div class="contact container" id="contact">
+        <div class="contact__email">
             
          <form action="contact-form.php" method="post">
                     <h2>Kontaktiraj nas</h2>
@@ -30,7 +31,7 @@ const contact = () => {
               <input type="text" placeholder="Ostavi broj telefona" name = "telefon"/>
             </div>
           </div>
-                      <input type="submit" value="Pošalji" class="subphp"/>
+                <input type="submit" value="Pošalji" className="blue__button subphp"/>
             <input type='hidden' name='submit'/>
         </form>
         </div>
@@ -68,6 +69,7 @@ const contact = () => {
         </div>
       </div>
       </div></div>
+      </div>
     )
 };
 export default contact

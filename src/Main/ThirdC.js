@@ -28,7 +28,9 @@ const thirdC = () => {
             </table>
           </div>
           </div>
+          <div className="fix">
           <a className="blue__button" href="/school.html#tabes">Saznaj više</a>
+          </div>
         </div>
           <div className="flexbox__item">
             <h2>LAPL (A)</h2>
@@ -53,7 +55,9 @@ const thirdC = () => {
               </table>
               </div>
             </div>
+            <div className="fix">
             <a className="blue__button" href="/school.html#tabes">Saznaj više</a>
+            </div>
           </div>
             <div className="flexbox__item">
               <h2>Timebuilding</h2>
@@ -74,8 +78,9 @@ const thirdC = () => {
               </table>
               </div>
                 </div>
-
+                <div className="fix">
                 <a className="blue__button" href="/school.html#tabes">Saznaj više</a>
+                </div>
               </div>
             </div>
         </div>

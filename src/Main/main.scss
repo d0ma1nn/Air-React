@@ -52,7 +52,7 @@ h1, a, p, h2{
 .flexbox1 {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 2rem;
     text-align: center;
     &__item {
         display: flex;
@@ -82,21 +82,35 @@ h1, a, p, h2{
 }
 .flexbox {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     margin-top: 3rem;
     gap: 2rem;
     margin-bottom: 5rem;
+    align-self: stretch;
+    .parGrey {
+        color: $greyColor;
+        font-weight: 600;
+    }
+    .fix {
+        padding-block: 2rem;
+    }
     &__item {
-        min-width: 22%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        box-shadow: 0px 5px 5px 0px rgba(80, 80, 80, 0.8);
         background-color: $whiteColor;
         text-align: center;
-        padding: 2rem 4rem;
+        padding: 2rem;
         border-radius: 1rem;
-        h2, p  {
-            color: $greyColor;
+        p  {
+            color: $whiteColor;
             
         }
         h2 {
+            font-size: 2rem;
+            color: $greyColor;
             padding-bottom: 1rem;
         }
         h3 {
@@ -106,18 +120,24 @@ h1, a, p, h2{
         }
         table {
             align-self: center;
-            margin-top: 1rem;
-            margin-bottom: 3rem;
+            margin-block: 1rem;
             border-collapse: collapse;
+            min-height: 8vw;
+            min-width: 100%;
         }
         td {
-            border: solid $aquaColor 1px;
+            border: solid $whiteColor 1px;
             max-width: 70%;
             p {
                 padding: 0.5rem 1rem
             }
         }
     }
+}
+.gridbox {
+    background-color: $aquaColor;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .mission {
@@ -154,3 +174,194 @@ h1, a, p, h2{
         min-width: 50%;
     }
 }
+
+.contact {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: rgba(250, 250, 250, 0.5);
+    border-radius: 2rem;
+    padding-bottom: 0.2rem;
+    h2 {
+        color: $aquaColor;
+    }
+    &__email{
+        margin: 0 auto;
+        color: $aquaColor;
+        background-color: $whiteColor;
+        padding: 2rem;
+    }
+        p{
+            color: $aquaColor;
+        }
+        .contact__information {
+            &--left p{
+                color: $aquaColor
+            }
+            &--left {
+                gap: 3rem;
+            }
+        }
+    }
+
+
+  
+  .contact__email {
+    position: relative;
+    top: 2rem;
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 4rem 1rem;
+    border-radius: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .subphp {
+      border: none;
+      text-decoration:none;
+      font-size: 1rem;
+      background-color: $aquaColor;
+      font-weight: 900;
+      color: $whiteColor;
+      padding: 0.3rem 3rem;
+      border-radius: 2rem;
+      position: absolute;
+      right: 2rem;
+  }
+  .subphp:hover {
+          cursor:pointer;
+          opacity: 0.7;
+  }
+  input[value="Pošalji"] {
+      width: min(30vw, 10rem);
+      padding: 0.3rem 2rem 0.3rem 1.8rem;
+  
+  }
+  .contact__email a {
+    position: absolute;
+    right: 1.5rem;
+    text-align: right;
+    background-color: var(--secondary-color);
+    font-weight: 900;
+    color: var(--primary-color);
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+  }
+  
+  .contact__email--template {
+    min-width: 50%;
+    margin-block: 2rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "ime prezime "
+      "input__ime input_prezime "
+      "email email " "email__input email__input "
+      "telefon telefon "
+      "telefon__input telefon__input "
+      "poruka poruka"
+      "message message"
+      "message message";
+  }
+  
+  .contact__email--template p {
+    padding-block: 0.3rem;
+    color: var(--secondary-color);
+  }
+  .contact__email--template input {
+    color: var(--tertially-color);
+    min-height: 100%;
+    min-width: 100%;
+    border: 1px solid var(--tertially-color);
+  }
+  
+  .ime {
+    grid-area: ime;
+  }
+  .prezime {
+    grid-area: prezime;
+  }
+  .poruka {
+    grid-area: poruka;
+  }
+  .input__ime {
+    margin-right: 0.4rem;
+    grid-area: input__ime;
+  }
+  .input_prezime {
+    grid-area: input_prezime;
+  }
+  .email {
+    grid-area: email;
+  }
+  .message {
+    grid-area: message;
+    margin-inline: 0.4rem;
+  }
+  .email__input {
+    grid-area: email__input;
+  }
+  .telefon {
+    grid-area: telefon;
+  }
+  .telefon__input {
+    grid-area: telefon__input;
+  }
+  .contact__info,
+  .contact__email {
+    z-index: 2;
+  }
+  
+  .contact__info {
+    background-color: rgba(250, 250, 250, 0.8);
+    margin-block: 2rem;
+    border-radius: 2rem;
+    min-width: 40%;
+  }
+  .contact__info h2 {
+    padding-top: 3rem;
+    padding-inline: 2rem;
+  }
+  .contact__informations {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+  .contact__informations p {
+    color: var(--tertially-color);
+    padding-block: 0.5rem;
+  }
+  .contact__informations p:nth-child(2n + 1) {
+    color: var(--secondary-color);
+  }
+  
+  .follow {
+    color: var(--secondary-color);
+    padding-inline:2rem;
+  
+  }
+  .follow p {
+    color: var(--secondary-color);
+    padding-block: 1rem;
+  }
+  
+  .social {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .av_sect:nth-child(1) h4 {
+    color: var(--secondary-color);
+  }
+  #levih, #desnih {
+      transition: 1s ease-in-out;
+  }
+  
+  .fab {
+    color: var(--tertially-color);
+  }
+  
