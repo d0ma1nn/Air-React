@@ -1,5 +1,8 @@
 import React from "react";
 import './NavStyle.scss'
+import {Link, Route, Routes} from 'react-router-dom'
+import School from "../School/School";
+
 
 const navBar = () => {
     return (
@@ -7,13 +10,16 @@ const navBar = () => {
         <header className="header">
         <div className="navmenu container">
           <div className="logo">
-            <div className="logo__content"></div>
+            <Link to="/"><div className="logo__content"></div></Link>
           </div>
           <div className="nav hidden">
-            <div className="nav__item">Škola letenja</div>
-            <div className="nav__item">Naša flota</div>
-            <div className="nav__item">O nama</div>
-            <div className="nav__item">FAQ</div>
+            {/* <Routes>
+            <Route path="School" element={<School />}></Route>
+            </Routes> */}
+            <Link to = "School" className="nav__item">Škola letenja</Link>
+            <Link to = "First" className="nav__item">Naša flota</Link>
+            <Link to = "Main" className="nav__item">O nama</Link>
+            <Link to = "ThirdC" className="nav__item">FAQ</Link>
           </div>
           <div></div>
            <div className="nav__contact"><p>Kontaktiraj nas</p></div>

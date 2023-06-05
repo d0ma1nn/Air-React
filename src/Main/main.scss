@@ -203,11 +203,55 @@ h1, a, p, h2{
                 gap: 3rem;
             }
         }
-    }
+}
 
+// FAQ customization
+
+.top__content {
+  display: flex;
+    &--left {
+      background-color: $aquaColor;
+      padding-inline: 8%;
+      padding-block: 10%;
+      h1 {
+        padding-bottom: 3rem;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &--right {
+      background-image: url("../img/pitanja.jpg");
+      background-size: cover;
+      min-width: 50%;
+      min-height: 20rem;
+    }
+}
+.pitanja {
+  display: flex;
+  padding: 8%;
+  padding-top: 4rem;
+  gap: 2rem;
+  background-color: $whiteColor;
+  h2 {
+    color: $aquaColor;
+    padding-block: 1rem;
+  }
+  p {
+    color: $greyColor;
+  }
+  &__levo {
+    flex: 1;
+  }
+  &__desno {
+    flex: 1;
+  }
+  
+}
 
   
-  .contact__email {
+.contact__email {
     position: relative;
     top: 2rem;
     background-color: rgba(250, 250, 250, 0.8);

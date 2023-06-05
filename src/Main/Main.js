@@ -3,7 +3,7 @@ import SecondC from "./SecondC";
 import ThirdC from "./ThirdC";
 import FourthC from "./FourthC";
 import FirstC from "./First";
-import ContactF from './ContactF'
+// import ContactF from './ContactF'
 import './main.scss'
 
 const mainContent = () => {
@@ -13,7 +13,7 @@ const mainContent = () => {
             <SecondC></SecondC>
             <ThirdC></ThirdC>
             <FourthC></FourthC>
-            <ContactF></ContactF>
+            {/* <ContactF></ContactF> */}
         </div>
         
     )

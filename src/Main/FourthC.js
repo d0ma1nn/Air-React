@@ -17,7 +17,7 @@ const fourthC = () => {
             
           <a href="/about.html">Više o nama</a>
         </div>
-        <div class="mission__img">
+        <div className="mission__img">
         </div>
         </div>
             
