@@ -3,12 +3,21 @@
 h1, a, p, h2{
     color: $whiteColor;
 }
+button:focus,button  {
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.6;
+  transition: ease-in 0.5s;
+}
 
 .blue__button {
     background-color: $aquaColor;
     padding: 0.7rem 2.5rem;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 600;
     border-radius: 2rem;   
     position: relative;
 }
@@ -250,6 +259,108 @@ h1, a, p, h2{
   
 }
 
+
+.avioni {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  flex: 1;
+  padding-inline: 8%;
+  background-color: $whiteColor;
+  &__levi {
+    position: relative;
+    border: 1px solid green;
+
+    &--slika {
+      background-image: url("../img/avion_l.png");
+      background-size: cover;
+      min-height: 22vh;
+      min-width: 60vh;
+      position: relative;
+      top: 8rem;
+    }
+    h2 {
+      text-align: center;
+      color: $whiteColor;
+      padding-top: 2rem;
+      position: relative;
+      top: 7rem;
+    }
+  }
+  &__desni {
+    position: relative;
+    border: 1px solid green;
+
+    &--slika {
+      background-image: url("../img/avion_d.png");
+      background-size: cover;
+      min-height: 22vh;
+      min-width: 60vh;
+      position: relative;
+      top: 8rem;
+    }
+    h2 {
+      text-align: center;
+      color: $whiteColor;
+      padding-top: 2rem;
+      position: relative;
+      top: 7rem;
+    }
+  }
+}
+.slideshow {
+  padding-inline: 8%;
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  min-height: 50vh;
+  background-color: $aquaColor;
+  padding-bottom: 5rem;
+  &__left {
+    background-image: url("../img/slika_3.png");
+    background-size: cover;
+    border-radius: 1rem;
+  }
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 5rem;
+    &--1  {
+      background-image: url("../img/IMG_6470.png");
+      background-size: cover;
+      width: 5rem;
+      min-height: 5rem;
+      border-radius: 0.5rem;
+    }
+    &--2 {
+      background-image: url("../img/IMG_6470.png");
+      background-size: cover;
+      width: 5rem;
+      min-height: 5rem; 
+      border-radius: 0.5rem;
+    }
+    &--3 {
+      background-image: url("../img/IMG_6470.png");
+      background-size: cover;
+      width: 5rem;
+      min-height: 5rem; 
+      border-radius: 0.5rem;
+    }
+    &--4 {
+      background-image: url("../img/IMG_6470.png");
+      background-size: cover;
+      width: 5rem;
+      min-height: 5rem; 
+      border-radius: 0.5rem;
+    }
+  }
+  &__right {
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+}
   
 .contact__email {
     position: relative;

@@ -65,30 +65,29 @@ const float = () => {
                 </div>
                 <div className="top__content--right"></div>
             </div>
-            <div class="flota">
-        <div class="container">
-        <div class="av_sect">
-        <h4 id="levih">Virus SW</h4></div>
-        <div class="av_sect"><h4 class="contact_nav" id="desnih">VELIS club</h4></div></div>
-      </div>
-
-      <div class="slide__show">
-        <div class="container">
-        <div class="slika__glavna" id="maine"></div>
-        <div class="red__slika">
-          <div class="flex_img1 img_size" id="slImg__1"></div>
-          <div class="flex_img2 img_size" id="slImg__2"></div>
-          <div class="flex_img3 img_size" id="slImg__3"></div>
-          <div class="flex_img4 img_size" id="slImg__4"></div>
-
-        </div>
-        <div class="text">
-          <h2>O avionima</h2>
-          <p>
-            Avione odlikuje efikasnost, bezbednost, jednostavnost, komfornost i ekonomičnost. Opremljeni su savremenom opremom, BPRS sistemom, auto pilotom i glass cockpit-om koji omogućavaju studentima okruženje kao u putničkom avionu. Pored osnovne obuke mogu da se koriste za vuču jedrilica, NVFR i A-UPRT.
-          </p>
-        </div>
-      </div></div>
+            <div className="avioni">
+                <div className="avioni__levi">
+                    <div className="avioni__levi--slika"></div>
+                    <h2>Virus SW</h2>
+                </div>
+                <div className="avioni__desni">
+                    <div className="avioni__desni--slika"></div>
+                    <h2>VELIS Club</h2>
+                </div>
+            </div>
+                <div className="slideshow">
+                    <div className="slideshow__left"></div>
+                    <div className="slideshow__middle">
+                        <button className="slideshow__middle--1"></button>
+                        <button type="button" className="slideshow__middle--2"></button>
+                        <button className="slideshow__middle--3"></button>
+                        <button className="slideshow__middle--4"></button>
+                    </div>
+                    <div className="slideshow__right">
+                        <h2>O avionima</h2>
+                        <p>Avione odlikuje efikasnost, bezbednost, jednostavnost, komfornost i ekonomičnost. Opremljeni su savremenom opremom, BPRS sistemom, auto pilotom i glass cockpit-om koji omogućavaju studentima okruženje kao u putničkom avionu. Pored osnovne obuke mogu da se koriste za vuču jedrilica, NVFR i A-UPRT. </p>
+                    </div>
+                </div>
         </>
     )
 }
