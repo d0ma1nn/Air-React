@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import Navi from '../Navigator/Navi';
 import '../Main/main.scss';
 
@@ -54,7 +54,18 @@ import '../Main/main.scss';
 //     }, 4000);
 //   });
   
-const float = () => {
+const bar1 = document.getElementsByClassName('slideshow__middle--1')
+console.log(bar1)
+
+
+const Float = () => {
+    // const [imageSrc, setImageSrc] = useState('./img/IMG_6470.png')
+    const [currentImage, setCurrentImage] = useState('./img/IMG_6470.png');
+
+    const handleClick = (image) => {
+      setCurrentImage(image);
+    };
+  
     return (
         <>
             <Navi />
@@ -76,12 +87,15 @@ const float = () => {
                 </div>
             </div>
                 <div className="slideshow">
-                    <div className="slideshow__left"></div>
+                    <div className="slideshow__left">
+                        {/* <img src={imageSrc} alt="Displayed Image" /> */}
+                        <div className="image-display">
+                                {currentImage && <img src={currentImage} alt="Selected Image" />}</div>
+                    </div>
                     <div className="slideshow__middle">
-                        <button className="slideshow__middle--1"></button>
-                        <button type="button" className="slideshow__middle--2"></button>
-                        <button className="slideshow__middle--3"></button>
-                        <button className="slideshow__middle--4"></button>
+                        <img src="./img/1.png" onClick={() => handleClick("image1.jpg")} alt="Thumbnail 1" />
+                        <img src="./img/3   .png" onClick={() => handleClick("image2.jpg")} alt="Thumbnail 2" />
+                        <img src="./img/IMG_6470.png" onClick={() => handleClick("image3.jpg")} alt="Thumbnail 3" />
                     </div>
                     <div className="slideshow__right">
                         <h2>O avionima</h2>
@@ -92,4 +106,4 @@ const float = () => {
     )
 }
 
-export default float;
+export default Float;

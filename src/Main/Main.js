@@ -8,13 +8,13 @@ import './main.scss'
 
 const mainContent = () => {
     return (
-        <div>
+        <>
             <FirstC></FirstC>
             <SecondC></SecondC>
             <ThirdC></ThirdC>
             <FourthC></FourthC>
             {/* <ContactF></ContactF> */}
-        </div>
+        </>
         
     )
 }

@@ -8,6 +8,7 @@ import React from 'react';
 // import FourthC from './Main/FourthC';
 import FAQ from './Faq/Faq'
 import Float from './Float/Float'
+import About from './About/About'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Main />
       <FAQ />
       <Float />
+      <About />
      </>
   );
 }

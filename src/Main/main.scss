@@ -361,7 +361,64 @@ button:hover {
     }
   }
 }
+
+.about__top {
+  display: flex;
+  &--left {
+    background-color: $aquaColor;
+    padding-inline: 8%;
+    padding-block: 10%;
+    h1 {
+      padding-bottom: 3rem;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  &--right {
+    background-image: url("../img/IMG_6470.png");
+    background-size: cover;
+    min-width: 50%;
+    min-height: 20rem;
+  }
+}
   
+.about__middle {
+  padding-inline: 8%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: space-around;
+  gap: 3rem;
+  text-align: justify;
+  &--left {
+    &--image {
+      background-image: url('/img/Group_117.png');
+      background-size: cover;
+      height: 50vh;
+    }
+  }
+  &--center {
+    &--image {
+      background-image: url('/img/Group_118.png');
+      background-size: cover;
+      height: 50vh;
+    }
+  }
+  &--right {
+    &--image {
+      background-image: url('/img/Group_119.png');
+      background-size: cover;
+      height: 50vh;
+    }
+  }
+  p {color: $greyColor;}
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: $aquaColor;
+  }
+}
 .contact__email {
     position: relative;
     top: 2rem;

@@ -13,7 +13,7 @@ const faq = () => {
                 </div>
                 <div className="top__content--right"></div>
             </div>
-            <div class="pitanja">
+            <div className="pitanja">
                 {/* <div class="pitanja__container"> */}
                     <div class="pitanja__levo">
                         <h2>Koja je razlika između LAPL i PPL dozvole ?</h2>
@@ -39,14 +39,14 @@ const faq = () => {
                     <p>  Da bi se dobila PPL dozvola potrebno je oko 4-6 meseci u zavisnosti od vremenskih uslova I tempa letenja.</p>
                     
                         </div>
-                        <div class="pitanja__desno"><h2>	Kako mogu da dobijem PPL ako imam LAPL dozvolu ?</h2>
+                        <div className="pitanja__desno"><h2>	Kako mogu da dobijem PPL ako imam LAPL dozvolu ?</h2>
                         <p>  Imaoci LAPL dozvole mogu da upišu obuku za PPL dozvolu i potrebno je da nalete 15 sati sa instuktorom. Nakon toga izlaze na ispit za PPL dozvolu. Teorija za LAPL i PPL je ista tako da se ne polaže teorija. </p>
                         <h2>  Kako mogu da dobijem LAPL ili PPL ako imam ultralaku dozvolu?</h2>
                         <p>  Piloti ultralakih vazduhoplova moraju da upišu školu I završe obuku kao da nemaju ni jednu dozvolu. Ultralaka dozvola se ne priznaje ka daljim ovlašćenjima.</p> 
                         <h2>  Da li se nalet na avion Virus SW 121 priznaje ?</h2>
                         <p>  Pipistrel Virus SW 121 je EASA sertifikovan aviona po seritfikacionim ulslovima CS-LSA. Nalet na ovom avionu se priznaje. Avion može da radi i naprednu obuku kao i deo CPL obuke. </p>
                         <h2>  Kada mogu da počnem da letim ?</h2>
-                        <p class="space">  Praktična obuka može da se počne nakon odslušane teorijske obuke u školi.</p>
+                        <p className="space">  Praktična obuka može da se počne nakon odslušane teorijske obuke u školi.</p>
                         <h2> Da li ne naša dozvola priznata u Evropi ?</h2>
                         <p> Srpske dozvole nisu priznate u Evropi. Postoji način konverzije dozvole I uslov za nastavak školovanja u Evropi prihvata našu PPL dozvolu. </p> 
                         <h2>  Šta mi sve treba da letim u inostranstvu ?</h2>
