@@ -385,38 +385,70 @@ button:hover {
 }
   
 .about__middle {
+  background-color: white;
   padding-inline: 8%;
   padding-top: 10rem;
   display: flex;
   flex-direction: space-around;
-  gap: 3rem;
+  gap: 5rem;
   text-align: justify;
   &--left {
     &--image {
       background-image: url('/img/Group_117.png');
       background-size: cover;
-      height: 50vh;
+      width:  300px;
+      height: 300px;
+      margin: 0 auto;
     }
+
   }
   &--center {
     &--image {
       background-image: url('/img/Group_118.png');
       background-size: cover;
-      height: 50vh;
+      width:  300px;
+      height: 300px;
+      margin: 0 auto;
     }
   }
   &--right {
     &--image {
       background-image: url('/img/Group_119.png');
       background-size: cover;
-      height: 50vh;
+      width:  300px;
+      height: 300px;
+      margin: 0 auto;
     }
   }
   p {color: $greyColor;}
   h3 {
+    padding-top: 5rem;
+
     text-align: center;
     font-size: 2rem;
     color: $aquaColor;
+    padding-bottom: 2rem;
+  }
+}
+.about__bottom {
+  display: flex;
+  flex: 1;
+  background-color: $aquaColor;
+  &--left {
+    background-image: url('/img/group_b.png');
+    background-size: cover;
+    min-width: 50%;
+    min-height: 80vh;
+  }
+  &--right {
+    position: relative;
+    top: 50%;
+    margin: 10rem;
+    margin-top: 15rem;
+    h3 {
+      font-size: 2rem;
+      color: white;
+    }
   }
 }
 .contact__email {
