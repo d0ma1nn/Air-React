@@ -3,6 +3,8 @@ import SecondC from "./SecondC";
 import ThirdC from "./ThirdC";
 import FourthC from "./FourthC";
 import FirstC from "./First";
+import Form from "../Form/Form";
+
 // import ContactF from './ContactF'
 import './main.scss'
 
@@ -14,6 +16,7 @@ const mainContent = () => {
             <ThirdC></ThirdC>
             <FourthC></FourthC>
             {/* <ContactF></ContactF> */}
+            <Form />
         </>
         
     )

@@ -1,6 +1,7 @@
 import React from "react";
 import Navi from '../Navigator/Navi';
 import '../Main/main.scss';
+import Form from "../Form/Form";
 
 const about = ( ) => {
     return (
@@ -43,6 +44,7 @@ const about = ( ) => {
                         <p>Ponosni smo što možemo da pružimo više tipova obuke, u zavisnosti da li je letenje hobi ili posao. Iskustvo znanje i obrazovanje je ono što nas ističe. Plan i program obuke je usklađen sa najvišim standardima koji su zahtevani u Evropi, pa tako i naši studenti imaju priliku da se upoznaju i sa letenjem u drugim državama.</p>
                     </div>
                 </div>
+                <Form />
         </>
     )
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Navi from '../Navigator/Navi';
 import '../Main/main.scss';
+import Form from "../Form/Form";
+
 
 // aviRight.onmouseenter = function () {
 //     aviLeft.style.transform = "scale(0.7)";
@@ -102,6 +104,7 @@ const Float = () => {
                         <p>Avione odlikuje efikasnost, bezbednost, jednostavnost, komfornost i ekonomičnost. Opremljeni su savremenom opremom, BPRS sistemom, auto pilotom i glass cockpit-om koji omogućavaju studentima okruženje kao u putničkom avionu. Pored osnovne obuke mogu da se koriste za vuču jedrilica, NVFR i A-UPRT. </p>
                     </div>
                 </div>
+                <Form />
         </>
     )
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import Navi from '../Navigator/Navi';
 import '../Main/main.scss';
+import Form from "../Form/Form";
+
 
 const faq = () => {
     return (
@@ -55,6 +57,7 @@ const faq = () => {
                     </div>
                 {/* </div> */}
             </div>
+            <Form />
         </>
     )
 }
