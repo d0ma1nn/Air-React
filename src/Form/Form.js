@@ -13,55 +13,76 @@ const Form = () => {
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        if(name.length === 0) {
+            alert('Niste upisali ime.');
+        } else if (lastname.length === 0) {
+            alert('Niste uneli prezime')
+        } else if (email.length === 0) {
+            alert('Niste upisali vaš email')
+        } else if(message.length=== 0) {
+            alert('Niste uneli poruku')
+        } else {
+            alert ('Poslali ste poruku')
+        }
+
+    }
+
     return (
         <>
             <div className="contact">
                 <div className="contact__form">
                     <h2>Kontaktiraj nas</h2>
+                    <form id="form">
                     <div className="contact__form--flex">
                          <div className="contact__form--flex--left">
                             <div className="contact__form--flex--left--ime">
-                                <div>
-                                    <h4>Ime *</h4>
-                                    <input type="text" name="ime" placeholder="ime"/>
+                                <div className="column">
+                                    <label>Ime *</label>
+                                    <input type="text" name="name" placeholder="ime"/>
                                 </div>
-                                <div>
-                                    <h4>Prezime *</h4>
-                                    <input type="text" name="prezime" placeholder="prezime"/>
+                                <div className="column">
+                                    <label>Prezime *</label>
+                                    <input type="text" name="lastname" placeholder="prezime"/>
                                 </div>
                             </div>
                         </div>
                         <div className="contact__form--flex--right">
                             <h4>Poruka *</h4>
-                            <input className="poruka" type="text" name="poruka" placeholder="poruka"/>
+                            <input className="poruka" type="text" id="message" name="message" placeholder="poruka"/>
                         </div>
                     </div>
-                        <div className="email">
-                                <h4>Email *</h4>
-                                <input className="emailField" type="text" name="email" placeholder="email"/>
+                        <div className="email column">
+                                <label>Email *</label>
+                                <input className="emailField" type="text" id="email" name="email" placeholder="email"/>
                         </div>
-                        <div className="telefon">
-                                <h4>Telefon</h4>
-                                <input className="emailField" type="telefon" name="email" placeholder="telefon"/>
+                        <div className="telefon column">
+                                <label>Telefon</label>
+                                <input className="emailField" type="text" id="phone" name="phone" placeholder="telefon"/>
                         </div>
+                        <button type="submit" form='form'>Submit</button>
+                        </form>
+
                 </div>
                 <div className="contact__information">
                     <h2>Kontakt informacije</h2>
                     <div className="contact__information--text">
                         <div className="contact__information--text--left">
-                            <h4>Email</h4>
-                            <p>Office@airlo.rs</p>
-                            <h4>Adresa</h4>
+                            <h3>Email</h3>
+                            <p className="gap">Office@airlo.rs</p>
+                            <h3>Adresa</h3>
                             <p>Aerodrom Vojka,<br></br>
                                 Nikole Pašića 26b,<br></br>
                                 Vojka 22313,<br></br>
                                 Serbia </p>
                         </div>
                         <div className="contact__information--text--right">
-                            <h4>Telefon</h4>
+                            <h3>Telefon</h3>
                             <p>+381654378492</p>
                             <p>+381637556812</p>
-                            <h5>Radni sati</h5>
+                            <h3 className="gap">Radni sati</h3>
                             <p>
                             <b>M - F:</b><br></br>
                             08:00 - 20:00<br></br>

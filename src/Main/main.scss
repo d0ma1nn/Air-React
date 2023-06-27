@@ -3,6 +3,13 @@
 h1, a, p, h2{
     color: $whiteColor;
 }
+label {
+  color: $aquaColor;
+}
+input {
+  margin-top: 1rem;
+  height: 2.5rem;
+}
 button:focus,button  {
   text-decoration: none;
   outline: none;
@@ -465,7 +472,7 @@ button:hover {
   padding: 2rem;
   border-radius: 2rem;
   .poruka {
-    height: 240%;
+    height: 330%;
   }
   h4,h2 {
     color: $aquaColor;
@@ -477,6 +484,13 @@ button:hover {
     color: $greyColor;
   }
   &__form {
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .email, .telefon {
+      margin-top: 2rem;
+    }
     h2 {
       padding-bottom: 2rem;
     }
@@ -497,6 +511,12 @@ button:hover {
     }
   }
   &__information {
+    .gap {
+      padding-block: 1rem;
+    }
+    h3 {
+      color: $aquaColor;
+    }
     h2 {
       padding-bottom: 2rem;
     }
@@ -514,7 +534,6 @@ button:hover {
         font-weight: 500;
       }
       &--icons {
-        padding-top: 2rem;
         display: flex;
         gap: 1rem
       }
@@ -527,6 +546,7 @@ button:hover {
 .emailField {
   width: 62%;
 }
+
 
 // .contact__email {
 //     position: relative;
