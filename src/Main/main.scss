@@ -263,14 +263,11 @@ button:hover {
 .avioni {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   flex: 1;
   padding-inline: 8%;
   background-color: $whiteColor;
   &__levi {
     position: relative;
-    border: 1px solid green;
-
     &--slika {
       background-image: url("../img/avion_l.png");
       background-size: cover;
@@ -289,8 +286,6 @@ button:hover {
   }
   &__desni {
     position: relative;
-    border: 1px solid green;
-
     &--slika {
       background-image: url("../img/avion_d.png");
       background-size: cover;
@@ -470,8 +465,7 @@ button:hover {
   padding: 2rem;
   border-radius: 2rem;
   .poruka {
-    color: red;
-    height: 300%;
+    height: 240%;
   }
   h4,h2 {
     color: $aquaColor;
@@ -483,6 +477,9 @@ button:hover {
     color: $greyColor;
   }
   &__form {
+    h2 {
+      padding-bottom: 2rem;
+    }
     background-color: rgba(250, 250, 250, 0.9);
     border-radius: 1.5rem;
     padding: 3rem;
@@ -500,6 +497,9 @@ button:hover {
     }
   }
   &__information {
+    h2 {
+      padding-bottom: 2rem;
+    }
     background-color: rgba(250, 250, 250, 0.9);
     padding: 3rem;
     border-radius: 1.5rem;
@@ -507,6 +507,20 @@ button:hover {
       display: flex;
       gap: 5rem;
 
+    }
+    &__social{
+      h2 {
+        font-size: 1.2rem ;
+        font-weight: 500;
+      }
+      &--icons {
+        padding-top: 2rem;
+        display: flex;
+        gap: 1rem
+      }
+    }
+    .iconSize {
+      max-height: 2rem;
     }
   }
 }

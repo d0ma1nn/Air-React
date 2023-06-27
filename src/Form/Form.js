@@ -1,6 +1,10 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import {useState} from 'react'
 import '../Main/main.scss';
+import fbImg from '../img/fb.png'
+import igImg from '../img/in.png'
+import ytImg from '../img/yt.png'
 
 const Form = () => {
     const [name, setName] = useState('')
@@ -64,6 +68,20 @@ const Form = () => {
                             <b> S - S:</b><br></br>
                             08:00 - 17:00 <br></br>
                             </p>
+                        </div>
+                    </div>
+                    <div className="contact__information__social">
+                        <h2>Zaprati nas</h2>
+                        <div className="contact__information__social--icons">
+                            <Link to="https://www.youtube.com/channel/UCfPyGwJj8dlU-IFgBZaDVBw">
+                                <img src={fbImg} alt="example" className="iconSize"/>
+                            </Link>
+                            <Link to="https://www.youtube.com/channel/UCfPyGwJj8dlU-IFgBZaDVBw">
+                                <img src={ytImg} alt="example" className="iconSize"/>
+                            </Link>
+                            <Link to="https://www.instagram.com/airlo_vojka/">
+                                <img src={igImg} alt="example" className="iconSize"/>
+                            </Link>                            
                         </div>
                     </div>
                 </div>
