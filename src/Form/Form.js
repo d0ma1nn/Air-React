@@ -15,7 +15,12 @@ const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+        if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address');
+        } else {
+          alert('Okay');
+        }
         if(name.length === 0) {
             alert('Niste upisali ime.');
         } else if (lastname.length === 0) {
