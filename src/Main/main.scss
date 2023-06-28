@@ -19,6 +19,13 @@ button:hover {
   opacity: 0.6;
   transition: ease-in 0.5s;
 }
+.submitButton {
+  margin-top: 1rem;
+  right: 0;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+}
 
 .blue__button {
     background-color: $aquaColor;

@@ -46,28 +46,28 @@ const Form = () => {
                             <div className="contact__form--flex--left--ime">
                                 <div className="column">
                                     <label>Ime *</label>
-                                    <input type="text" name="name" placeholder="ime"/>
+                                    <input type="text" value={name} name="name" onChange={(e) => setName(e.target.value)} placeholder="ime"/>
                                 </div>
                                 <div className="column">
                                     <label>Prezime *</label>
-                                    <input type="text" name="lastname" placeholder="prezime"/>
+                                    <input type="text"value={lastname} name="lastname" onChange={(e) => setLastname(e.target.value)} placeholder="prezime"/>
                                 </div>
                             </div>
                         </div>
                         <div className="contact__form--flex--right">
                             <h4>Poruka *</h4>
-                            <input className="poruka" type="text" id="message" name="message" placeholder="poruka"/>
+                            <input className="poruka" type="text" id="message" value={message} name="message" onChange={(e) => setMessage(e.target.value)} placeholder="poruka"/>
                         </div>
                     </div>
                         <div className="email column">
                                 <label>Email *</label>
-                                <input className="emailField" type="text" id="email" name="email" placeholder="email"/>
+                                <input className="emailField" type="text" id="email" value={email} name="email" onChange={(e) => setEmail(e.target.value)} placeholder="email"/>
                         </div>
                         <div className="telefon column">
                                 <label>Telefon</label>
-                                <input className="emailField" type="text" id="phone" name="phone" placeholder="telefon"/>
+                                <input className="emailField" type="text" id="phone"value={phone}name="phone" placeholder="telefon"/>
                         </div>
-                        <button type="submit" form='form'>Submit</button>
+                        <button type="submit" form='form' className="submitButton" onClick={handleSubmit}>Submit</button>
                         </form>
 
                 </div>
