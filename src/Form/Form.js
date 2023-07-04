@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import {useState} from 'react'
 import '../Main/main.scss';
+import axios from 'axios'
 import fbImg from '../img/fb.png'
 import igImg from '../img/in.png'
 import ytImg from '../img/yt.png'
@@ -30,14 +31,15 @@ const Form = () => {
         } else if(message.length=== 0) {
             alert('Niste uneli poruku')
         } else {
-            alert ('Poslali ste poruku')
+            // alert ('Poslali ste poruku')
+            const url = 'http://localhost/test/formsubmit.php'
         }
 
     }
 
     return (
         <>
-            <div className="contact">
+            <div className="contact" id="form">
                 <div className="contact__form">
                     <h2>Kontaktiraj nas</h2>
                     <form id="form">
@@ -67,7 +69,7 @@ const Form = () => {
                                 <label>Telefon</label>
                                 <input className="emailField" type="text" id="phone"value={phone}name="phone" placeholder="telefon"/>
                         </div>
-                        <button type="submit" form='form' className="submitButton" onClick={handleSubmit}>Submit</button>
+                        <button type="submit" form='form' className="submitButton" value="register" onClick={handleSubmit}>Submit</button>
                         </form>
 
                 </div>

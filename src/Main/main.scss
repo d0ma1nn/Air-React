@@ -20,12 +20,19 @@ button:hover {
   transition: ease-in 0.5s;
 }
 .submitButton {
-  margin-top: 1rem;
+  margin-top: 2rem;
   right: 0;
-  width: 100%;
+  width: 30%;
   position: relative;
-  padding: 1rem;
+  padding: 0.5rem;
+  background-color: $aquaColor;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  float: right;
+  border: none;
 }
+
 
 .blue__button {
     background-color: $aquaColor;
@@ -475,6 +482,7 @@ button:hover {
   gap: 5rem;
   margin-inline: 8%;
   margin-top: 3rem;
+  margin-bottom: 4rem;
   background-color: rgba(250, 250, 250, 0.5);
   padding: 2rem;
   border-radius: 2rem;
