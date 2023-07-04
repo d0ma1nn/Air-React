@@ -2,6 +2,7 @@ import React, {useState, useEffect } from "react";
 import './NavStyle.scss'
 import {Link, Route, Routes} from 'react-router-dom'
 import School from "../School/School";
+import About from '../About/About'
 
 // window.addEventListener("scroll", function () {
 //   if (window.scrollY > 100) {
@@ -72,13 +73,12 @@ const NavBar = () => {
             <Link to="/"><div className="logo__content"></div></Link>
           </div>
           <div className="nav hidden">
-            {/* <Routes>
-            <Route path="School" element={<School />}></Route>
-            </Routes> */}
-            <Link to = "School" className="nav__item">Škola letenja</Link>
-            <Link to = "First" className="nav__item">Naša flota</Link>
-            <Link to = "Main" className="nav__item">O nama</Link>
-            <Link to = "ThirdC" className="nav__item">FAQ</Link>
+            <Routes>
+              <Route path = "School" element={<School />} className="nav__item">Škola letenja</Route>
+              <Route path = "Float" element={<About />} className="nav__item">Naša flota</Route>
+              <Route path = "About" className="nav__item">O nama</Route>
+              <Route path = "Faq" className="nav__item">FAQ</Route>
+            </Routes>
           </div>
           <div></div>
           <Link to="#form" className="nav__contact" onClick={handleClick}>Kontaktiraj nas</Link>
