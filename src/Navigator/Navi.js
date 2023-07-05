@@ -1,8 +1,11 @@
 import React, {useState, useEffect } from "react";
 import './NavStyle.scss'
-import {Link, Route, Routes} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import School from "../School/School";
 import About from '../About/About'
+import Float from '../Float/Float'
+import Faq from '../Faq/Faq'
+
 
 // window.addEventListener("scroll", function () {
 //   if (window.scrollY > 100) {
@@ -73,12 +76,12 @@ const NavBar = () => {
             <Link to="/"><div className="logo__content"></div></Link>
           </div>
           <div className="nav hidden">
-            <Routes>
-              <Route path = "School" element={<School />} className="nav__item">Škola letenja</Route>
-              <Route path = "Float" element={<About />} className="nav__item">Naša flota</Route>
-              <Route path = "About" className="nav__item">O nama</Route>
-              <Route path = "Faq" className="nav__item">FAQ</Route>
-            </Routes>
+            <ul>
+              <CustomLink to ="/School" className="nav__item">Škola letenja</CustomLink>
+              <CustomLink to ="/Float" className="nav__item">Naša flota</CustomLink>
+              <CustomLink to ="/About" className="nav__item">O nama</CustomLink>
+              <CustomLink to ="/Faq" className="nav__item">FAQ</CustomLink>
+            </ul>
           </div>
           <div></div>
           <Link to="#form" className="nav__contact" onClick={handleClick}>Kontaktiraj nas</Link>
@@ -88,4 +91,14 @@ const NavBar = () => {
     )
 }
 
+function CustomLink({to ,children, ...props}) {
+  const path = window.location.pathname;
+  console.log(path)
+  return (
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+
+  )
+}
 export default NavBar
