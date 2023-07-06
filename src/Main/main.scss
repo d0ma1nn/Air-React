@@ -53,11 +53,12 @@ ul {
     display: flex;
     justify-content: space-between;
     &__image {
+      
         background-image: url("../img/img_he.png");
         background-size: cover;
         height: 25vw;
         width: 40%;
-        margin: 3rem 0rem;
+        margin: 5rem 0rem;
         padding-bottom: 2rem;
     }
     &__text { 
