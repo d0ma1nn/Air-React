@@ -5,10 +5,10 @@ import Main from './Main/Main'
 import "./Variables/Var.scss"
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
-import Faq from './Faq/Faq'
-import Float from './Float/Float'
-import About from './About/About'
-import School from './School/School'
+import Faq from './Components/Faq'
+import Float from './Components/Float'
+import About from './Components/About'
+import School from './Components/School'
 
 function App() {
   return (

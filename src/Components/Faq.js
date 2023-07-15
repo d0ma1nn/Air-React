@@ -1,7 +1,7 @@
 import React from "react";
 import Navi from '../Navigator/Navi';
 import '../Main/main.scss';
-import Form from "../Form/Form";
+import Form from "./Form";
 
 
 const faq = () => {

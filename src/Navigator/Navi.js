@@ -1,10 +1,10 @@
 import React, {useState, useEffect } from "react";
 import './NavStyle.scss'
 import {Link} from 'react-router-dom'
-import School from "../School/School";
-import About from '../About/About'
-import Float from '../Float/Float'
-import Faq from '../Faq/Faq'
+import School from "../Components/School";
+import About from '../Components/About'
+import Float from '../Components/Float'
+import Faq from '../Components/Faq'
 
 
 // window.addEventListener("scroll", function () {

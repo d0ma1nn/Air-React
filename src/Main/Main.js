@@ -3,7 +3,7 @@ import SecondC from "./SecondC";
 import ThirdC from "./ThirdC";
 import FourthC from "./FourthC";
 import FirstC from "./First";
-import Form from "../Form/Form";
+import Form from "../Components/Form";
 import Navi from "../Navigator/Navi"
 // import ContactF from './ContactF'
 import './main.scss'
