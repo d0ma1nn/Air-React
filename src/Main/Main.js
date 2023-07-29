@@ -5,7 +5,6 @@ import FourthC from "./FourthC";
 import FirstC from "./First";
 import Form from "../Components/Form";
 import Navi from "../Navigator/Navi"
-// import ContactF from './ContactF'
 import './main.scss'
 
 const mainContent = () => {
@@ -16,7 +15,6 @@ const mainContent = () => {
             <SecondC></SecondC>
             <ThirdC></ThirdC>
             <FourthC></FourthC>
-            {/* <ContactF></ContactF> */}
             <Form />
         </>
         

@@ -58,14 +58,19 @@ import Form from "./Form";
   
 const bar1 = document.getElementsByClassName('slideshow__middle--1')
 console.log(bar1)
-
+// class ImgWrapper extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {hovered:false }
+//     }
+// }
 
 const Float = () => {
     // const [imageSrc, setImageSrc] = useState('./img/IMG_6470.png')
     const [currentImage, setCurrentImage] = useState('./img/IMG_6470.png');
 
     const handleClick = (image) => {
-      setCurrentImage(image);
+      setCurrentImage(setCurrentImage);
     };
   
     return (
@@ -82,6 +87,7 @@ const Float = () => {
                 <div className="avioni__levi">
                     <div className="avioni__levi--slika"></div>
                     <h2>Virus SW</h2>
+                    
                 </div>
                 <div className="avioni__desni">
                     <div className="avioni__desni--slika"></div>
@@ -92,7 +98,7 @@ const Float = () => {
                     <div className="slideshow__left">
                         {/* <img src={imageSrc} alt="Displayed Image" /> */}
                         <div className="image-display">
-                                {currentImage && <img src={currentImage} alt="Selected Image" />}</div>
+                                <img src={handleClick}/></div>
                     </div>
                     <div className="slideshow__middle">
                         <img src="./img/1.png" onClick={() => handleClick("image1.jpg")} alt="Thumbnail 1" />
